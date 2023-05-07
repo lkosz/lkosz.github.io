@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, maximum-scale=1">
+<title>Łukasz Koszyk home page</title>
+<link rel="icon" href="favicon.png" type="image/png">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+
+<!--[if lt IE 9]>
+    <script src="js/respond-1.1.0.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/html5element.js"></script>
+<![endif]-->
+
+
+</head>
+<body>
+
+
+<!-- ========================================================================================================================================================== -->
+
+ <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+        <li data-target="#carousel" data-slide-to="2"></li>
+        <li data-target="#carousel" data-slide-to="3"></li>
+    </ol>
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+        <!-- ---------------------------------------------------------------------------------------------- -->
+        <div class="active item">
+	    <div class="caption zoomIn wow animated"> 		
+                <h2>ASTROPHOTOGRAPHY<br/><strong>Planets, nebulas, galaxies, globular clusters</strong></h2>
+            </div>
+	    <img class="" src="img/slide1.jpg" alt="">
+        </div>
+        <!-- ---------------------------------------------------------------------------------------------- -->
+        <div class="item">
+	    <div class="caption zoomIn wow animated"> 		 			
+                <h2>ELECTRONICS<br/><strong>DIY devices</strong></h2>
+            </div>
+	    <img class="" src="img/slide2.jpg" alt="">
+        </div>
+        <!-- ---------------------------------------------------------------------------------------------- -->
+        <div class="item">
+	    <div class="caption zoomIn wow animated"> 		 			
+                <h2>SOFTWARE<br/><strong>DIY tools</strong></h2>
+            </div>
+            <img class="" src="img/slide3.jpg" alt="">
+        </div>
+        <!-- ---------------------------------------------------------------------------------------------- -->
+        <div class="item">
+	    <div class="caption zoomIn wow animated"> 		 			
+                <h2>ASTRONOMICAL DATA<br/><strong></strong></h2>
+            </div>
+            <img class="" src="img/slide4.jpg" alt="">
+        </div>
+        <!-- ---------------------------------------------------------------------------------------------- -->
+    </div>
+    <!-- Carousel nav -->
+    <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
+</div>
+
+<!--Header_section-->
+<header id="header_wrapper">
+  <div class="container">
+    <div class="header_box">
+      <!--<div class="logo"><a href="#">Resume</a></div>-->
+	  <nav class="navbar navbar-inverse" role="navigation">
+      <div class="navbar-header">
+        <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        </div>
+	    <div id="main-nav" class="collapse navbar-collapse navStyle">
+			<ul class="nav navbar-nav" id="mainNav">
+			  <li class="active"><a href="#carousel" class="scroll-link">Home</a></li>
+			  <li><a href="#Portfolio" class="scroll-link">Photos</a></li>
+			  <li><a href="#projects" class="scroll-link">Projects</a></li>
+			  <li><a href="#aboutUs" class="scroll-link">About Me</a></li>
+			  <li><a href="#contact" class="scroll-link">Contact</a></li>
+			</ul>
+      </div>
+	 </nav>
+    </div>
+  </div>
+</header>
+<!--Header_section-->
+
+
+<!-- ========================================================================================================================================================== -->
+
+
+<section id="Portfolio" class="content">
+    <div class="container portfolio_title">
+        <div class="section-title">
+            <h2>Photos</h2>
+        </div>
+    </div>
+    <div class="portfolio">
+
+        <div id="filters" class="sixteen columns">
+            <ul class="clearfix">
+                <li><a id="all" href="#" data-filter="*" class="active"><h5>All</h5></a></li>
+                <li><a id="all" href="#" data-filter=".comet" class="active"><h5>Comets</h5></a></li>
+                <li><a id="all" href="#" data-filter=".galaxy" class="active"><h5>Galaxies</h5></a></li>
+                <li><a id="all" href="#" data-filter=".globular_cluster" class="active"><h5>Globular clusters</h5></a></li>
+                <li><a id="all" href="#" data-filter=".planet" class="active"><h5>Planets</h5></a></li>
+                <li><a id="all" href="#" data-filter=".planetary_nebula" class="active"><h5>Planetary nebulas</h5></a></li>
+                <li><a id="all" href="#" data-filter=".planetoid_dwarf" class="active"><h5>Planetoids and dwarf planets</h5></a></li>
+            </ul>
+        </div>
+        <div class="isotope fadeInLeft animated wow grid" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper">
+
+
+<%=@@@photos@@@=%>
+
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ========================================================================================================================================================== -->
+
+
+
+<section id="projects"><!--projects-->
+    <div class="about-us aboutUs-container fadeInLeft animated wow">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="inner_section">
+
+
+<%=@@@projects@@@=%>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<!--Projects-->
+
+
+
+<!-- ========================================================================================================================================================== -->
+
+
+
+<section id="aboutUs"><!--Aboutus-->
+    <div class="about-us aboutUs-container fadeInLeft animated wow">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="inner_section">
+                <div class="row">
+
+<%=@@@aboutme@@@=%>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Aboutus-->
+
+
+
+<!-- ========================================================================================================================================================== -->
+
+
+
+<!--Footer-->
+<footer class="footer_wrapper" id="contact">
+  <div class="container">
+    <section class="page_section contact" id="contact">
+      <div class="contact_section">
+        <h2>Contact</h2>
+          <ul class="social_links">
+            <li class="twitter animated bounceIn wow delay-02s"><a href="https://www.linkedin.com/in/lukasz-koszyk"><i class="fa fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="container">
+    <div class="footer_bottom"><span>Photos, videos and text are my property, and are available under GPLv3 license<br>Site based on template by <a href="http://webthemez.com">WebThemez.com</a> with my changes.</span> </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+<script type="text/javascript" src="js/jquery.nav.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.js"></script>
+<script src="js/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/wow.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+</html>

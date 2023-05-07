@@ -1,0 +1,117 @@
+source: 'index.html.template'
+target: 'index.html'
+keys:
+  photos:
+    -
+      file: 'gallery.html.template'
+      parameters:
+        object_type:      'comet'
+        full_path:        'photos/67p.jpg'
+        small_img_path:   'photos/67p-small.jpg'
+        fancybox_params:  'data-fancybox="images"'
+        img_alt_name:     'comet 67p'
+        object_catalogue: 'Comet'
+        object_number:    '67p'
+        description:      'Churyumov-Gerasimenko<br>Classical cassegrain 200/2450, ASI183MM, EQ6R, 60s frame, catched 22:34 CET 30.10.2021, bortle 9'
+    -
+      file: 'gallery.html.template'
+      parameters:
+        object_type:      'comet'
+        full_path:        'https://www.youtube.com/watch?v=WcR4X8jhQLo'
+        small_img_path:   'photos/67p-small.jpg'
+        fancybox_params:  'data-fancybox="images"'
+        img_alt_name:     'comet 67p'
+        object_catalogue: 'Comet'
+        object_number:    '67p &nbsp vid'
+        description:      'Churyumov-Gerasimenko<br>Classical cassegrain 200/2450, ASI183MM, EQ6R, 60s frames, catched from 22:34 CET 30.10.2021 to 00:30 CET 31.10.2021, bortle 9'
+    -
+      file: 'gallery.html.template'
+      parameters:
+        object_type:      'planetoid_dwarf'
+        full_path:        'photos/pluto_2021.png'
+        small_img_path:   'photos/pluto_2021-small.png'
+        fancybox_params:  'data-fancybox="images"'
+        img_alt_name:     'pluto 2021'
+        object_catalogue: 'Pluto'
+        object_number:    '2021'
+        description:      'Classical cassegrain 200/2450, ASI462MC, EQ5 GOTO, 20s frame full spectrum, catched 29.07.2021, at 23:50 CEST, bortle 9'
+
+  projects:
+    -
+      file: 'project.html.template'
+      parameters:
+        image: 'projects/szkolenia.jpg'
+        html_content: |
+          <p><b><h4>My trainings, handbooks and tutorials</h4></b></p>
+          <p><ul style="list-style: inside;">
+          <li>Puppet 4 PL</li>
+          <li>Linux basics PL</li>
+          <li>Docker PL</li>
+          </ul></p>
+          <p><a href="https://github.com/lkosz/szkolenia">https://github.com/lkosz/szkolenia</a></p>
+    -
+      file: 'project.html.template'
+      parameters:
+        image: 'projects/gears.png'
+        html_content: |
+          <p><b><h4>Drive for EQ3-2</h4></b></p>
+          2-axis drive for EQ3-2 - schema + Arduino code + 3D models of gears and cases for both RA and DEC axis
+          <p><a href="https://github.com/lkosz/eq3-2_drive">https://github.com/lkosz/eq3-2_drive</a></p>
+    -
+      file: 'project.html.template'
+      parameters:
+        image: 'projects/elektrofiszki.png'
+        html_content: |
+          <p><b><h4>Flash cards</h4></b></p>
+          This program is like flash cards but in electronic way. Choose between several languages, add any word/words/phrases/meanings you want. Program will ask for it and read back using voice from google translate to remember pronunciation. If you write correct answer (one of correct answers), word level is incremented which means program will ask again for it in longer period. Level 1 is after 5min, level 20 is after 72 days. If you answer wrong - level is decremented.
+          <p><a href="https://github.com/lkosz/elektrofiszki">https://github.com/lkosz/elektrofiszki</a></p>
+    -
+      file: 'project.html.template'
+      parameters:
+        image: 'projects/4mag2021.jpg'
+        html_content: |
+          <p><b><h4>Determine star magnitude which can be seen during midday 2021</h4></b></p>
+          it is said that 4 mag stars and brighter can be seen during the day - try to check it
+          <p><a href="https://github.com/lkosz/astronomy/tree/main/daylight_star_magnitude">https://github.com/lkosz/astronomy/tree/main/daylight_star_magnitude</a></p>
+    -
+      file: 'project.html.template'
+      parameters:
+        image: 'projects/eq5_goto.jpg'
+        html_content: |
+          <p><b><h4>DIY GOTO for EQ5 + DIY guiding</h4></b></p>
+          GOTO computer for equatorial mount EQ5. Goal: goto with accuracy better than 10 arcsec, DIY guiding. All cost much less than EQ6-R. Unfortunately quality of EQ5 is poor so guiding have accuracy greater than 1"
+          <p><a href="https://github.com/lkosz/eq5_goto">https://github.com/lkosz/eq5_goto</a></p>
+    -
+      file: 'project.html.template'
+      parameters:
+        image: 'projects/astro_gui.png'
+        html_content: |
+          <p><b><h4>App for DIY GOTO, getting frames from cameras and platesolve</h4></b></p>
+          There are two apps - app1 is for my EQ5 GOTO, app2 is to run with EQ6-R. Both are for photo acquisition, platesolving, automatization
+          <p><a href="https://github.com/lkosz/astro_camera_gui">https://github.com/lkosz/astro_camera_gui</a></p>
+    -
+      file: 'project.html.template'
+      parameters:
+        image: 'projects/filterwheel.jpg'
+        html_content: |
+          <p><b><h4>Filterwheel for 18 1.25" astronomy filters</h4></b></p>
+          Controlled via my gui apps (via REST API)
+          <p><a href="https://github.com/lkosz/astro_filterwheel">https://github.com/lkosz/astro_filterwheel</a></p>
+
+  aboutme:
+    -
+      file: 'project.html.template'
+      parameters:
+        image: 'img/001.jpg'
+        html_content: |
+          <p>I'm a mathematician interrested in mathematical analysis, Linux admin. DevOPS, SysOPS, Linux, Puppet, Bash, Python, CentOS/Rocky Linux, Kubernetes, network debugging, IaaS, IaaC, security. Can't live without Elasticsearch, Grafana and Kibana.</p>
+          <p>My interests:</p>
+          <ul class="about-us-list">
+              <li class="points"><b>Astronomy:</b> space imaging in bands from UV to SWIR under Bortle 9, Planets and weak Solar System objects, small and planetary nebulas, globular clusters. Radioastronomy on wish list</li>
+              <li class="points"><b>Data analysis:</b> air pollution and weather extremes, climate change</li>
+              <li class="points"><b>Electronics:</b> self-made PCBs, devices based on microcontrollers, Raspberry, and plain TTL/CMOS chips</li>
+              <li class="points"><b>3D FDM:</b> printing and modeling using OpensCAD</li>
+              <li class="points"><b>Aviation:</b> love to fly A319 in bad weather conditions using VOR/DME or NDB. Favourite airports: LOWI, LOWK, VQPR, LGSM, LSZS</li>
+              <li class="points">Play on kalimba</li>
+          </ul>
+
