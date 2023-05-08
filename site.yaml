@@ -4,33 +4,36 @@ keys:
   photos:
     -
       file: 'gallery.html.template'
+      duplicate:
+        object_type:      'all_objects'
       parameters:
         object_type:      'comet'
         full_path:        'photos/67p.jpg'
         small_img_path:   'photos/67p-small.jpg'
-        fancybox_params:  'data-fancybox="images"'
         img_alt_name:     'comet 67p'
         object_catalogue: 'Comet'
         object_number:    '67p'
         description:      'Churyumov-Gerasimenko<br>Classical cassegrain 200/2450, ASI183MM, EQ6R, 60s frame, catched 22:34 CET 30.10.2021, bortle 9'
     -
       file: 'gallery.html.template'
+      duplicate:
+        object_type:      'all_objects'
       parameters:
         object_type:      'comet'
         full_path:        'https://www.youtube.com/watch?v=WcR4X8jhQLo'
         small_img_path:   'photos/67p-small.jpg'
-        fancybox_params:  'data-fancybox="images"'
         img_alt_name:     'comet 67p'
         object_catalogue: 'Comet'
         object_number:    '67p &nbsp vid'
         description:      'Churyumov-Gerasimenko<br>Classical cassegrain 200/2450, ASI183MM, EQ6R, 60s frames, catched from 22:34 CET 30.10.2021 to 00:30 CET 31.10.2021, bortle 9'
     -
       file: 'gallery.html.template'
+      duplicate:
+        object_type:      'all_objects'
       parameters:
         object_type:      'planetoid_dwarf'
         full_path:        'photos/pluto_2021.png'
         small_img_path:   'photos/pluto_2021-small.png'
-        fancybox_params:  'data-fancybox="images"'
         img_alt_name:     'pluto 2021'
         object_catalogue: 'Pluto'
         object_number:    '2021'

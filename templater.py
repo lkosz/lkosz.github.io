@@ -16,6 +16,7 @@ for key in config['keys'].keys():
   for content in config['keys'][key]:
     f = open(content['file'], 'r')
     file_content = f.read()
+    file_content_duplicate = file_content
     f.close()
     if 'parameters' in content.keys():
       for paramkey in content['parameters'].keys():
@@ -24,7 +25,14 @@ for key in config['keys'].keys():
           print('For key: ' + paramkey + ', can\'t find anchor: ' + '<%=@@@' + paramkey + '@@@=%> in file: ' + content['file'])
           sys.exit(1)
         file_content = file_content.replace('<%=@@@' + paramkey + '@@@=%>',  paramval)
+        if 'duplicate' in content.keys():
+          if paramkey in content['duplicate'].keys():
+            file_content_duplicate = file_content_duplicate.replace('<%=@@@' + paramkey + '@@@=%>',  content['duplicate'][paramkey])
+          else:
+            file_content_duplicate = file_content_duplicate.replace('<%=@@@' + paramkey + '@@@=%>',  paramval)
       total_content += '\n' + file_content + '\n'
+      if 'duplicate' in content.keys():
+        total_content += '\n' + file_content_duplicate + '\n'
     else:
       total_content += '\n' + file_content + '\n'
   main_template = main_template.replace('<%=@@@' + key + '@@@=%>',  total_content)
