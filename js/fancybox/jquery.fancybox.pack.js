@@ -73,6 +73,7 @@
     buttons: [
       "zoom",
       //"share",
+      "rotate",
       "slideShow",
       //"fullScreen",
       //"download",
@@ -287,7 +288,7 @@
 
     // Use mousewheel to navigate gallery
     // If 'auto' - enabled for images only
-    wheel: "auto",
+    wheel: false,
 
     // Callbacks
     //==========
@@ -3453,7 +3454,7 @@
         rel: 0,
         hd: 1,
         wmode: "transparent",
-        enablejsapi: 1,
+        enablejsapi: 0,
         html5: 1
       },
       paramPlace: 8,
@@ -5630,3 +5631,59 @@
     }
   });
 })(document, jQuery);
+
+
+var RotateImage = function (instance) {
+    this.instance = instance;
+
+    this.init();
+};
+
+$.extend(RotateImage.prototype, {
+    $button_left: null,
+    $button_right: null,
+    transitionanimation: true,
+
+    init: function () {
+        var self = this;
+
+        self.$button_left = $('<button data-rotate-left class="fancybox-button fancybox-button--rotate" title="Rotate to left"><i class="fa fa-undo" aria-hidden="true"></i></button>')
+            .prependTo(this.instance.$refs.toolbar)
+            .on('click', function (e) {
+                self.rotate('left');
+            });
+
+        self.$button_right = $('<button data-rotate-right class="fancybox-button fancybox-button--rotate" title="Rotate to right"><i class="fa fa-repeat" aria-hidden="true"></i></button>')
+            .prependTo(this.instance.$refs.toolbar)
+            .on('click', function (e) {
+                self.rotate('right');
+            });
+    },
+
+    rotate: function (direction) {
+        var self = this;
+        var image = self.instance.current.$image[0];
+        var angle = parseInt(self.instance.current.$image.attr('data-angle')) || 0;
+
+        if (direction == 'right') {
+            angle += 90;
+        } else {
+            angle -= 90;
+        }
+
+        if (!self.transitionanimation) {
+            angle = angle % 360;
+        } else {
+            $(image).css('transition', 'transform .3s ease-in-out');
+        }
+
+        self.instance.current.$image.attr('data-angle', angle);
+
+        $(image).css('webkitTransform', 'rotate(' + angle + 'deg)');
+        $(image).css('mozTransform', 'rotate(' + angle + 'deg)');
+    }
+});
+
+$(document).on('onInit.fb', function (e, instance) {
+    instance.Rotate = new RotateImage(instance);
+});
