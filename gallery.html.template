@@ -1,13 +1,14 @@
             <!-- ------------------------------------------------------------------------------------------------------------------------------- -->
             <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four isotope-item effect-oscar    <%=@@@object_type@@@=%>">
-                <a href="<%=@@@full_path@@@=%>" class="fancybox" data-fancybox="<%=@@@object_type@@@=%>">
+                <a href="<%=@@@full_path@@@=%>" class="fancybox" data-fancybox="<%=@@@object_type@@@=%>" data-caption="<%=@@@description@@@=%>">
                     <div class="portfolio_img">
                         <img src="<%=@@@small_img_path@@@=%>"  alt="<%=@@@img_alt_name@@@=%>">
                     </div>
                     <figcaption>
                         <div>
                             <h2><%=@@@object_catalogue@@@=%> <span><%=@@@object_number@@@=%></span></h2>
-                            <p><%=@@@description@@@=%></p>
+                            <p><%=@@@object_name@@@=%></p>
+                            <p><%=@@@date@@@=%></p>
                         </div>
                     </figcaption>
                 </a>
