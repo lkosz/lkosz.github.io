@@ -7,6 +7,46 @@ keys:
       duplicate:
         object_type:       'all_objects'
       parameters:
+        object_type:       'sun'
+        full_path:         'https://www.youtube.com/watch?v=RmX_DRl4MaY'
+        small_img_path:    'photos/sun-airplane1-small.jpg'
+        img_alt_name:      'sun airplane 1'
+        object_catalogue:  'Sun'
+        object_number:     'airplane vid'
+        object_name:       ''
+        telescope:         'ED 72'
+        mount:             'Trident P75'
+        camera:            'ASI432MM'
+        filters:           'Quark Chromo'
+        expositions:       'L: 2000 x 3ms'
+        date:              '20.09.2023 08:24 UTC'
+        sky:               'Bortle 9'
+        extra_description: "it's LOT5RW LO524 E170 or RYR6WF FR353 B738"
+    -
+      file: 'gallery.html.template'
+      duplicate:
+        object_type:       'all_objects'
+      parameters:
+        object_type:       'sun'
+        full_path:         'photos/sun-airplane1-raw.jpg'
+        small_img_path:    'photos/sun-airplane1-small.jpg'
+        img_alt_name:      'sun airplane 1'
+        object_catalogue:  'Sun'
+        object_number:     'airplane raw'
+        object_name:       ''
+        telescope:         'ED 72'
+        mount:             'Trident P75'
+        camera:            'ASI432MM'
+        filters:           'Quark Chromo'
+        expositions:       'L: 2000 x 3ms'
+        date:              '20.09.2023 08:24 UTC'
+        sky:               'Bortle 9'
+        extra_description: "it's LOT5RW LO524 E170 or RYR6WF FR353 B738"
+    -
+      file: 'gallery.html.template'
+      duplicate:
+        object_type:       'all_objects'
+      parameters:
         object_type:       'comet'
         full_path:         'photos/67p.jpg'
         small_img_path:    'photos/67p-small.jpg'
@@ -48,11 +88,11 @@ keys:
         object_type:       'all_objects'
       parameters:
         object_type:       'planetoid_dwarf'
-        full_path:         'photos/pluto_2021.png'
-        small_img_path:    'photos/pluto_2021-small.png'
+        full_path:         'photos/pluto_2021.jpg'
+        small_img_path:    'photos/pluto_2021-small.jpg'
         img_alt_name:      'pluto 2021'
         object_catalogue:  'Pluto'
-        object_number:     '2021'
+        object_number:     ''
         object_name:       ''
         telescope:         'CC 200/2450'
         mount:             'EQ5 DIY GOTO'

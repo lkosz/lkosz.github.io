@@ -113,6 +113,8 @@
                 <li><a id="all" href="#" data-filter=".planet"           class="active"><h5>Planets</h5></a></li>
                 <li><a id="all" href="#" data-filter=".planetary_nebula" class="active"><h5>Planetary nebulas</h5></a></li>
                 <li><a id="all" href="#" data-filter=".planetoid_dwarf"  class="active"><h5>Planetoids and dwarf planets</h5></a></li>
+                <li><a id="all" href="#" data-filter=".sun"              class="active"><h5>Sun</h5></a></li>
+                <li><a id="all" href="#" data-filter=".moon"             class="active"><h5>Moon</h5></a></li>
             </ul>
         </div>
         <div class="isotope fadeInLeft animated wow grid" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper">
