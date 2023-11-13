@@ -21,7 +21,7 @@ keys:
         expositions:       'L: 2000 x 3ms'
         date:              '20.09.2023 08:24 UTC'
         sky:               'Bortle 9'
-        extra_description: "it's LOT5RW LO524 E170 or RYR6WF FR353 B738"
+        extra_description: "it's EI-ENX RYR6WF FR353 B738"
     -
       file: 'gallery.html.template'
       duplicate:
@@ -41,7 +41,7 @@ keys:
         expositions:       'L: 2000 x 3ms'
         date:              '20.09.2023 08:24 UTC'
         sky:               'Bortle 9'
-        extra_description: "it's LOT5RW LO524 E170 or RYR6WF FR353 B738"
+        extra_description: "it's EI-ENX RYR6WF FR353 B738"
     -
       file: 'gallery.html.template'
       duplicate:
