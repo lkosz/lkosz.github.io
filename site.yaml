@@ -7,6 +7,46 @@ keys:
       duplicate:
         object_type:       'all_objects'
       parameters:
+        object_type:       'moon'
+        full_path:         'photos/2023-10-28-moon-eclipse-big.jpg'
+        small_img_path:    'photos/2023-10-28-moon-eclipse-small.jpg'
+        img_alt_name:      'Moon eclipse 2023-10-28'
+        object_catalogue:  'Moon'
+        object_number:     'eclipse 2023'
+        object_name:       ''
+        telescope:         'FRA300'
+        mount:             'EQ6R'
+        camera:            'ASI533MC'
+        filters:           'full spectrum RGB converted to gray'
+        expositions:       'L: 18 frames 2-1000ms, gain 0-450'
+        date:              '28.10.2023 17:30-21:30 UTC'
+        sky:               'Bortle 9'
+        extra_description: "catched through thick clouds in bad conditions, stacked 13k frames chosen manually from 131k frames"
+    -
+      file: 'gallery.html.template'
+      duplicate:
+        object_type:       'all_objects'
+      parameters:
+        object_type:       'moon'
+        full_path:         'https://www.youtube.com/watch?v=LaoYKK6UJZ8'
+        small_img_path:    'photos/2023-10-28-moon-eclipse-small.jpg'
+        img_alt_name:      'Moon eclipse 2023-10-28'
+        object_catalogue:  'Moon'
+        object_number:     'eclipse 2023'
+        object_name:       ''
+        telescope:         'FRA300'
+        mount:             'EQ6R'
+        camera:            'ASI533MC'
+        filters:           'full spectrum RGB converted to gray'
+        expositions:       'L: 18 frames 2-1000ms, gain 0-450'
+        date:              '28.10.2023 17:30-21:30 UTC'
+        sky:               'Bortle 9'
+        extra_description: "catched through thick clouds in bad conditions, stacked 13k frames chosen manually from 131k frames"
+    -
+      file: 'gallery.html.template'
+      duplicate:
+        object_type:       'all_objects'
+      parameters:
         object_type:       'sun'
         full_path:         'https://www.youtube.com/watch?v=RmX_DRl4MaY'
         small_img_path:    'photos/sun-airplane1-small.jpg'
